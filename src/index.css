@@ -1,0 +1,165 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #121212;
+}
+
+header{
+  padding: 50px 15px 0px;
+}
+
+header h1{
+  color: #fff;
+  font-size: 48px;
+  font-weight: 500;
+  text-align: center;
+}
+
+main{
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+section{
+  position: relative;
+  padding: 15px;
+}
+
+.searchbox{
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  outline: none;
+  background: none;
+  background-color: #EEE;
+  padding-right: 50px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #53565A;
+  transition: 0.4s ease-out;
+}
+.search-icon{
+  position:absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right:5px;
+  width:45px;
+  height:45px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.searchbox:focus{
+  box-shadow: 0px 0px 8px 3px #44A4C4;
+}
+
+.results .result h3{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px;
+  border: 2px solid #fff;
+  flex: 1 1 100%;
+  transition: 0.4s ease-out;
+}
+
+.results .result:hover h3{
+  color: #000;
+  background-color: #fff;
+}
+
+.results{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.results .result{
+  width: 33.3333%;
+  min-width: 250px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.results .result img{
+  width: 100%;
+  display: block;
+  cursor: pointer;
+}
+
+.movie-detail{
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #121212;
+  overflow-y: scroll;
+
+}
+.movie-detail .content{
+  display: block;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 25px;
+  color: #fff;
+}
+
+.movie-detail .content h2{
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.movie-detail .content h2 span{
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.movie-detail .content .rating{
+  margin-bottom: 30px;
+}
+
+.movie-detail .content .plot{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px 30px;
+}
+
+.movie-detail .content .plot img{
+  flex: 1 1 50%;
+  max-width: 300px;
+  padding-top: 0px 15px;
+}
+
+.movie-detail .content .plot p{
+  flex: 1 1 50%;
+  padding: 15px;
+}
+
+.movie-detail .content .close{
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: 700;
+  background: 4488C4;
+  color: #000;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  appearance: none;
+  cursor: pointer;
+  transition: 0.4 ease-out;
+}
+
+
