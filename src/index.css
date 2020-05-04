@@ -162,4 +162,28 @@ section{
   transition: 0.4 ease-out;
 }
 
+.pagination {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.page-item {
+  font-weight: 600;
+  list-style: none;
+  padding: 8px 16px;
+  border: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.4s ease-out;
+}
+
+.page-item:hover{
+  background-color: #fff;
+  color: #000;
+}
+
+
+
 
