@@ -14,9 +14,7 @@ function Pagination({postPerPage, totalPosts, handleChangePage}) {
             <ul className= "pagination">
                 {pageNumbers.map(number => (
                     <li key={number} className="page-item" onClick={() => handleChangePage(number)}>
-                        
                             {number}
-                        
                     </li>
                 ))}
             </ul>
