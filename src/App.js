@@ -6,7 +6,8 @@ import MovieDetail from './component/MovieDetail'
 
 
 function App() {
-  const apiurl = "http://www.omdbapi.com/?apikey=71cc7b64";
+  const api_key = process.env.REACT_APP_API_KEY;
+  const apiurl = `http://www.omdbapi.com/?apikey=${api_key}`;
 
   const [state, setstate] = useState({
     s: "",
